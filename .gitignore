@@ -15,3 +15,7 @@ data/profile.json
 dist/
 build/
 docs/jane_doe_profile.md
+MISSION.md
+RESOURCES.md
+assets/
+lessons/
