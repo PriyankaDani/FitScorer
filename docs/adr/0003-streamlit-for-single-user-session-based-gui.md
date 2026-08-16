@@ -1,0 +1,3 @@
+# Streamlit as the v1 GUI
+
+The brief left the GUI choice open (exe, Vercel, Streamlit, or other) but required it support a session where the user loads their Profile once and then scores multiple JobPostings iteratively, comparing results — and required the choice not foreclose a later move to a shared, multi-user web app. We chose Streamlit: it has built-in session state that fits the load-once/score-many workflow directly, runs locally like a desktop app for v1's single-user scope, and the same codebase deploys as a shared web app later without a rewrite (unlike a compiled exe, which would need replacing outright).

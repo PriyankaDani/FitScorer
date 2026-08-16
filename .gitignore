@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+reports/*.md
+!reports/.gitkeep
+data/profile.json
+!data/profile.example.json
+.streamlit/secrets.toml
+*.egg-info/
+dist/
+build/

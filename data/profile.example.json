@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "summary": "Mechatronics engineer with experience in hardware-in-the-loop testing, applied machine learning, and generative AI application development. Comfortable moving between embedded/controls work and Python-based ML tooling.",
+  "skills": [
+    { "name": "Python", "category": "programming", "proficiency": "advanced" },
+    { "name": "PyTorch", "category": "ml_framework", "proficiency": "intermediate" },
+    { "name": "MATLAB/Simulink", "category": "programming", "proficiency": "advanced" },
+    { "name": "Hardware-in-the-Loop Testing", "category": "testing", "proficiency": "advanced" },
+    { "name": "Functional Safety (ISO 26262)", "category": "domain", "proficiency": "intermediate" },
+    { "name": "Retrieval-Augmented Generation", "category": "ai_ml", "proficiency": "intermediate" },
+    { "name": "Prompt Engineering", "category": "ai_ml", "proficiency": "intermediate" },
+    { "name": "Time-Series Forecasting", "category": "ai_ml", "proficiency": "intermediate" },
+    { "name": "GitHub", "category": "tooling", "proficiency": "advanced" },
+    { "name": "Stakeholder Communication", "category": "soft_skill", "proficiency": "advanced" }
+  ],
+  "experience": [
+    {
+      "role_title": "Battery Software Test Engineer (HiL)",
+      "start_date": "2024-10",
+      "end_date": null,
+      "description": "Develop and execute requirement-based HiL test packages for battery management software, covering functional-safety and quality-management requirements. Built an internal agentic RAG chatbot to answer documentation questions automatically, and lead evaluation of AI tooling for the wider test team.",
+      "key_skills_demonstrated": ["HiL testing", "ISO 26262", "Python", "Generative AI", "RAG", "stakeholder communication"]
+    },
+    {
+      "role_title": "Research and Development Intern",
+      "start_date": "2024-04",
+      "end_date": "2024-09",
+      "description": "Built an AI-based evaluation tool for powertrain driveability assessment, including a one-click pipeline usable by testers without ML experience. Trained a Temporal Fusion Transformer model for driveability prediction.",
+      "key_skills_demonstrated": ["PyTorch", "time-series ML", "Python pipeline development", "GitHub"]
+    },
+    {
+      "role_title": "Advanced Vehicle Controls Engineer",
+      "start_date": "2019-10",
+      "end_date": "2021-07",
+      "description": "Designed a shift controller for a two-speed electric-vehicle transmission and developed vehicle subsystem models in Simulink. Delivered internal training on model-based controls development.",
+      "key_skills_demonstrated": ["MATLAB/Simulink", "model-based design", "EV powertrain", "technical training"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. Mechatronics and Automation Engineering",
+      "field_of_study": "Mechatronics",
+      "start_date": "2021-10",
+      "end_date": "2024-08",
+      "grade": "1.4",
+      "thesis_title": "Deep Time Series Forecasting Models for Powertrain Driveability Assessment",
+      "notable_coursework": ["Control Engineering", "Machine Learning", "Reinforcement Learning and Learning-based Control"]
+    },
+    {
+      "degree": "B.Tech. Mechanical Engineering, Automotive Specialisation",
+      "field_of_study": "Mechanical Engineering",
+      "start_date": "2015-06",
+      "end_date": "2019-05",
+      "grade": "9.48/10",
+      "thesis_title": "Development of a Pre-Programmed Auto Navigation Vehicle for Material Handling",
+      "notable_coursework": []
+    }
+  ],
+  "certifications": [
+    { "name": "ISTQB Certified Tester - Foundation Level", "year": "2026", "distinction": true }
+  ],
+  "languages": [
+    { "language": "English", "proficiency": "C1" },
+    { "language": "German", "proficiency": "B2" }
+  ]
+}
