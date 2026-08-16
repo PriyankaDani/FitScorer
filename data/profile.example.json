@@ -1,1 +1,136 @@
-﻿your new content here
+{
+    "schema_version": "1.0",
+    "summary": "Software engineer with experience in backend systems, cloud infrastructure, and data pipeline development. Comfortable working across API design and distributed systems.",
+    "skills": [
+        {
+            "name": "Java",
+            "category": "programming",
+            "proficiency": "advanced"
+        },
+        {
+            "name": "Spring Boot",
+            "category": "framework",
+            "proficiency": "intermediate"
+        },
+        {
+            "name": "SQL",
+            "category": "programming",
+            "proficiency": "advanced"
+        },
+        {
+            "name": "Unit Testing",
+            "category": "testing",
+            "proficiency": "advanced"
+        },
+        {
+            "name": "Cloud Security",
+            "category": "domain",
+            "proficiency": "intermediate"
+        },
+        {
+            "name": "Data Pipelines",
+            "category": "ai_ml",
+            "proficiency": "intermediate"
+        },
+        {
+            "name": "REST API Design",
+            "category": "ai_ml",
+            "proficiency": "advanced"
+        },
+        {
+            "name": "Anomaly Detection",
+            "category": "ai_ml",
+            "proficiency": "beginner"
+        },
+        {
+            "name": "GitLab",
+            "category": "tooling",
+            "proficiency": "advanced"
+        },
+        {
+            "name": "Team Leadership",
+            "category": "soft_skill",
+            "proficiency": "intermediate"
+        }
+    ],
+    "experience": [
+        {
+            "role_title": "Backend Software Engineer",
+            "start_date": "2023-01",
+            "end_date": null,
+            "description": "Design and maintain REST APIs for internal data services, covering scalability and reliability requirements. Built an automated data validation pipeline and mentor junior engineers on testing practices.",
+            "key_skills_demonstrated": [
+                "REST API design",
+                "SQL",
+                "Java",
+                "automated testing",
+                "mentoring"
+            ]
+        },
+        {
+            "role_title": "Software Development Intern",
+            "start_date": "2022-05",
+            "end_date": "2022-10",
+            "description": "Built a monitoring dashboard for service uptime, including alerting for anomalies. Implemented a lightweight anomaly-detection model for log analysis.",
+            "key_skills_demonstrated": [
+                "Python",
+                "anomaly detection",
+                "dashboard development",
+                "GitLab"
+            ]
+        },
+        {
+            "role_title": "Junior Systems Analyst",
+            "start_date": "2019-06",
+            "end_date": "2021-04",
+            "description": "Analyzed system requirements for internal tooling and documented data flow diagrams. Delivered onboarding training for new analysts.",
+            "key_skills_demonstrated": [
+                "systems analysis",
+                "documentation",
+                "process improvement",
+                "training"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "M.Sc. Computer Science",
+            "field_of_study": "Computer Science",
+            "start_date": "2021-09",
+            "end_date": "2023-06",
+            "grade": "1.7",
+            "thesis_title": "Scalable Anomaly Detection for Distributed Log Systems",
+            "notable_coursework": [
+                "Distributed Systems",
+                "Database Systems",
+                "Machine Learning"
+            ]
+        },
+        {
+            "degree": "B.Sc. Information Technology",
+            "field_of_study": "Information Technology",
+            "start_date": "2015-08",
+            "end_date": "2019-05",
+            "grade": "8.2/10",
+            "thesis_title": "Design of a Lightweight Inventory Tracking System",
+            "notable_coursework": []
+        }
+    ],
+    "certifications": [
+        {
+            "name": "AWS Certified Developer - Associate",
+            "year": "2024",
+            "distinction": false
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "proficiency": "C2"
+        },
+        {
+            "language": "French",
+            "proficiency": "B1"
+        }
+    ]
+}
