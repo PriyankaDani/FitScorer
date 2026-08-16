@@ -3,11 +3,14 @@ import pytest
 from fitscorer.models import (
     EducationEntry,
     ExperienceEntry,
+    FitScore,
     JobPosting,
     PreferredSkill,
     Profile,
+    RepositioningSuggestion,
     RequiredSkill,
     SkillEntry,
+    SkillVerdict,
 )
 
 
@@ -52,3 +55,37 @@ def sample_job_posting() -> JobPosting:
         required_skills=[RequiredSkill(name="Python"), RequiredSkill(name="SQL")],
         preferred_skills=[PreferredSkill(name="Kubernetes")],
     )
+
+
+@pytest.fixture
+def sample_verdicts() -> list[SkillVerdict]:
+    return [
+        SkillVerdict(
+            skill_name="Python",
+            skill_type="required",
+            verdict="match",
+            rationale="matches profile evidence",
+        ),
+        SkillVerdict(
+            skill_name="SQL",
+            skill_type="required",
+            verdict="partial",
+            rationale="some overlap with profile evidence",
+        ),
+        SkillVerdict(
+            skill_name="Kubernetes",
+            skill_type="preferred",
+            verdict="missing",
+            rationale="no supporting evidence in profile",
+        ),
+    ]
+
+
+@pytest.fixture
+def sample_fit_score() -> FitScore:
+    return FitScore(value=72.5, required_coverage=75.0, preferred_coverage=0.0)
+
+
+@pytest.fixture
+def sample_repositioning() -> RepositioningSuggestion:
+    return RepositioningSuggestion(text="Lean on adjacent evidence for Kubernetes.")
