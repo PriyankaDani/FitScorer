@@ -23,6 +23,7 @@ A personal tool that compares a job posting against the user's own career profil
 - Default to committing step-by-step: stage only the files modified or relevant to the step just completed. If the user doesn't name which files, ask which files to commit before staging anything.
 - Commit messages use `PREFIX: description`. Prefixes in use in this repo: `FEAT` (new implementation code), `TEST` (test files), `SETUP` (scaffolding/project setup), `DOC` (documentation, including ticket files under `docs/tickets/`).
 - Determine the prefix from the staged changes yourself, then state the chosen prefix and full commit message and wait for the user's confirmation before committing. If no single prefix clearly fits, ask instead of guessing.
+- Before committing, check whether the commit is associated with a step ticket under `docs/tickets/`. If it isn't, skip this check. If it is, verify that ticket's work items are complete — ignore any work items explicitly scoped to a future step/phase. If anything essential is incomplete, flag it to the user instead of committing. If everything essential is complete, update the ticket's status (as done in past commits, e.g. a "✅ Done"/"Status" note) before the commit proceeds.
 
 ## Read first
 
