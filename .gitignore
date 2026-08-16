@@ -14,3 +14,4 @@ data/profile.json
 *.egg-info/
 dist/
 build/
+docs/jane_doe_profile.md
