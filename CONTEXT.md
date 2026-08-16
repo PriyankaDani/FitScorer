@@ -25,7 +25,7 @@ A must-have skill extracted from a JobPosting. Distinct from a Preferred Skill (
 _Avoid_: Skill (unqualified)
 
 **Skill Verdict**:
-The judgment — match, partial, or missing, with a short rationale — of whether the Profile satisfies one Required Skill from a JobPosting. Produced by reading the Profile as a whole (not just the skills section), so an Experience Entry or Education Entry can serve as evidence even when the skill isn't listed verbatim.
+The judgment — match, partial, or missing, with a short rationale — of whether the Profile satisfies one Required Skill from a JobPosting. Produced by reading the Profile as a whole (not just the skills section), so an Experience Entry or Education Entry can serve as evidence even when the skill isn't listed verbatim. Also produced for Preferred Skills, weighted lower than Required Skills in the Fit Score ([0005](docs/adr/0005-skill-verdicts-cover-preferred-skills-too.md)).
 _Avoid_: Match, result, score (a Skill Verdict is not itself the score — it's one input to it)
 
 **Fit Score**:
