@@ -17,6 +17,13 @@ A personal tool that compares a job posting against the user's own career profil
 - If a test fails, do not unilaterally decide whether it's a bug or the test is wrong — that call must be signed off by the user before changing either the test or the implementation.
 - Playwright/GUI acceptance testing is deferred past v1 ([0003](docs/adr/0003-streamlit-for-single-user-session-based-gui.md)) — don't add it unless asked.
 
+## Git commits
+
+- Commit only when explicitly asked; push only when explicitly asked. After a commit, offer to push, then wait for confirmation.
+- Default to committing step-by-step: stage only the files modified or relevant to the step just completed. If the user doesn't name which files, ask which files to commit before staging anything.
+- Commit messages use `PREFIX: description`. Prefixes in use in this repo: `FEAT` (new implementation code), `TEST` (test files), `SETUP` (scaffolding/project setup), `DOC` (documentation, including ticket files under `docs/tickets/`).
+- Determine the prefix from the staged changes yourself, then state the chosen prefix and full commit message and wait for the user's confirmation before committing. If no single prefix clearly fits, ask instead of guessing.
+
 ## Read first
 
 - **[CONTEXT.md](CONTEXT.md)** — the project's vocabulary (Profile, JobPosting, Skill Verdict, Fit Score, Repositioning Suggestion, Session, Session History, Report). Use these terms exactly as defined there; don't substitute synonyms like "resume", "match score", or "recommendation" — CONTEXT.md lists what each term displaces and why.
