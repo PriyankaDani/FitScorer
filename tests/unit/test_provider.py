@@ -27,7 +27,7 @@ def test_get_model_ollama_default_provider(monkeypatch):
         return "fake_ollama_instance"
     monkeypatch.setattr("fitscorer.llm.provider.ChatOllama", fake_chat_ollama)
 
-    settings = Settings()
+    settings = Settings(_env_file=None)
     result = get_chat_model(settings)
 
     assert result == "fake_ollama_instance"
