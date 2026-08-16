@@ -58,5 +58,5 @@ def save_report(
 
     filename = "_".join(parts) + ".md"
     path = directory / filename
-    path.write_text(markdown)
+    path.write_text(markdown, encoding="utf-8")
     return path
