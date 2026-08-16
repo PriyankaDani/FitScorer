@@ -114,6 +114,16 @@ def test_llm_invocation_failure_raises_repositioning_error_not_raw_exception(sam
         generate_repositioning_suggestion(sample_verdicts, sample_fit_score, chat_model)
 
 
+# output-language standardization: repositioning text must be English regardless of source-language verdicts
+def test_prompt_instructs_english_output(sample_verdicts, sample_fit_score):
+    chat_model = FakeChatModel(return_value={"text": "Lean on adjacent evidence for Kubernetes."})
+
+    generate_repositioning_suggestion(sample_verdicts, sample_fit_score, chat_model)
+
+    prompt_sent = str(chat_model.structured_output.invoke_calls[0]).lower()
+    assert "english" in prompt_sent
+
+
 # happy path
 def test_happy_path_returns_repositioning_suggestion(sample_verdicts, sample_fit_score):
     chat_model = FakeChatModel(return_value={"text": "Lean on adjacent evidence for Kubernetes."})

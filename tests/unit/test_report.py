@@ -131,6 +131,16 @@ def test_save_report_company_none_has_no_dangling_separator(
     assert re.match(r"^senior-backend-engineer_\d{8}-\d{6}\.md$", path.name)
 
 
+def test_save_report_writes_utf8_regardless_of_platform_default_encoding(
+    sample_job_posting_with_company, tmp_path
+):
+    markdown = "# Report\n\n- Käse — 100% passt: Erfahrung überzeugt."
+
+    path = save_report(markdown, sample_job_posting_with_company, directory=tmp_path)
+
+    assert path.read_text(encoding="utf-8") == markdown
+
+
 def test_save_report_defaults_to_reports_directory(sample_job_posting_with_company, monkeypatch, tmp_path):
     monkeypatch.chdir(tmp_path)
 

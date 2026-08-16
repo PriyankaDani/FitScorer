@@ -169,6 +169,16 @@ def test_injected_output_field_names_do_not_leak_into_result_when_model_resists(
         extract_job_posting(INJECTION_RAW_TEXT, chat_model)
 
 
+# output-language standardization: extracted fields must be English regardless of raw_text's language
+def test_prompt_instructs_english_output_regardless_of_raw_text_language():
+    chat_model = FakeChatModel(return_value=VALID_PAYLOAD)
+
+    extract_job_posting("Wir suchen einen Senior Backend Engineer mit Python-Erfahrung.", chat_model)
+
+    prompt_sent = str(chat_model.structured_output.invoke_calls[0]).lower()
+    assert "english" in prompt_sent
+
+
 def test_raw_text_is_not_sent_as_the_bare_prompt():
     # raw_text must be embedded within a fixed instructional frame, not forwarded
     # as the entire prompt/instructions - otherwise injected "instructions" inside

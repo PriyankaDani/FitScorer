@@ -130,6 +130,17 @@ def test_whole_profile_passed_as_evidence(sample_profile, sample_job_posting):
     assert sample_profile.summary in prompt_sent
 
 
+# output-language standardization: rationale must be English regardless of JobPosting's language
+def test_prompt_instructs_english_output_regardless_of_job_posting_language(sample_profile, sample_job_posting):
+    payload = valid_verdicts_payload_for(sample_job_posting)
+    chat_model = FakeChatModel(return_value=payload)
+
+    generate_skill_verdicts(sample_profile, sample_job_posting, chat_model)
+
+    prompt_sent = str(chat_model.structured_output.invoke_calls[0]).lower()
+    assert "english" in prompt_sent
+
+
 # happy path
 def test_happy_path_returns_skill_verdicts(sample_profile, sample_job_posting):
     payload = valid_verdicts_payload_for(sample_job_posting)
